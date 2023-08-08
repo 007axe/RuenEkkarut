@@ -1,0 +1,47 @@
+<template>
+  <nav class="fixed top-0 z-10 bg-gray-50 w-full">
+    <div class="bg-[#282568]  ">
+      <div class=" lg:container mx-auto flex justify-between items-center md:px-10 px-3 py-3 duration-700 ease-in">
+        <img :src="img1" alt="logo-home" class="md:w-20 w-14 rounded-full" />
+        <div>
+          <span @click="MenuOpen()" class=" absolute md:hidden right-4 top-4 cursor-pointer text-4xl text-[#DBB461]">
+              <i :class="[openNav ? 'fa-solid fa-xmark' : 'fa-solid fa-bars']"></i>
+          </span>
+          <ul :class="[openNav ? 'left-0' : 'left-[-100%]']" class=" md:flex md:items-center md:px-0 px-10 md:pb-0 pb-10 md:static absolute md:bg-inherit bg-[#282568] md:w-auto w-full top-20 duration-700 ease-in">
+            <li class="md:ml-8 md:my-0 my-6 " v-for="link in Links">
+              <a :href="link.link" class="text-xl text-[#DBB461] no-underline  hover:border-solid hover:underline ">{{link.name}}</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  </template>
+  
+  <script>
+  
+  export default {
+    name: "Present",
+    data() {
+      return {
+        img1: "/public/logo.jpg",
+        Links: [
+          { name: "หน้าแรก", link: "#" },
+          { name: "สินค้า", link: "#" },
+          { name: "ติดต่อ", link: "#" },
+          { name: "เกี่ยวกับ", link: "#" }
+        ],
+        openNav: false,
+      }
+    },
+    methods:{
+      MenuOpen(){
+        this.openNav = !this.openNav
+    }
+  
+    }
+  };
+  </script>
+  
+  <style>
+  </style>
