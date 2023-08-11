@@ -33,7 +33,8 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  background-color: #51508A;
+  /* background-color: #51508A; */
+  background-color: #282568;
 }
 
 </style>
