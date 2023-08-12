@@ -1,7 +1,7 @@
 <template>
   <div class="bg-[#DBB461] font-Noto-Sans-Thai py-5">
     <div class="container mx-auto flex flex-col justify-center">
-      <h1 class="font-bold text-center text-4xl mb-5 text-[#282568]">ติดต่อ</h1>
+      <h1 class="font-bold text-center text-4xl mb-5 text-[#232F2F]">ติดต่อ</h1>
       <div class="container md:flex mb-8 mx-auto">
         <div class="md:w-[60%] w-[100%] md:mb-0 mb-6">
           <iframe
@@ -12,7 +12,7 @@
           ></iframe>
         </div>
         <div class="flex md:text-start text-center duration-700 ease-in">
-          <div class="text-[#282568]">
+          <div class="text-[#232F2F]">
             <h1 class="mb-4">สอบถามเพิ่มเติมเกี่ยวกับสินค้าได้ที่</h1>
             <div class="md:flex items-center mb-2">
               <i class="fa-solid fa-envelope text-3xl mr-3"></i>
@@ -23,7 +23,7 @@
               <p><a
                 @click="faceBook"
                 target="popup"
-                class="text-lg text-[#282568] no-underline"
+                class="text-lg text-[#232F2F] no-underline"
                 >เรือน เอกรุจต์ - Ruen Ekkarut</a
               ></p>
             </div>
