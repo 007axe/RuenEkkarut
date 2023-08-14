@@ -2,7 +2,7 @@
   
   <NavBar />
   <HeadLogo />
-  <Title/>
+  <TitleVue />
   <Product/>
   <Contact />
   
@@ -15,7 +15,7 @@
 import Contact from "./components/Contact.vue";
 import HeadLogo from "./components/HeadLogo.vue";
 import NavBar from "./components/NavBar.vue";
-import Title from "./components/Title.vue";
+import TitleVue from "./components/Title.vue";
 import Product from "./components/product.vue";
 
 
@@ -30,7 +30,7 @@ export default {
     HeadLogo,
     NavBar,
     Contact,
-    Title,
+    TitleVue,
     Product
 
   }

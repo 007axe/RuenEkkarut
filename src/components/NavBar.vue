@@ -27,7 +27,7 @@
         img1: "https://scontent.fbkk5-4.fna.fbcdn.net/v/t39.30808-6/365561972_297776782788594_8388459294095850690_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=be3454&_nc_ohc=muwqL02ypFAAX9UEfM_&_nc_ht=scontent.fbkk5-4.fna&oh=00_AfCV7jvTDlilovBDdbqHtmoL_HMBlusXnNufPVMwjjs6bQ&oe=64DBF020",
         Links: [
           { name: "หน้าแรก", link: "#" },
-          { name: "สินค้า", link: "#" },
+          { name: "สินค้า", link: "#porduct" },
           { name: "ติดต่อ", link: "#contact" },
           { name: "เกี่ยวกับ", link: "#" }
         ],

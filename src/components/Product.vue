@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="porduct">
     <div class="container mx-auto font-Noto-Sans-Thai text-[#232F2F] pb-12 duration-700 ease-in">
       <h2 class="font-bold text-center mb-12 text-[#DBB461] pt-4">สินค้า</h2>
       <!-- สินค้า -->
