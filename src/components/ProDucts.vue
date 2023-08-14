@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: "Product",
+  name: "ProDucts",
   data() {
     return {
       products: [

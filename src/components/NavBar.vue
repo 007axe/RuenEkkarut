@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed top-0 z-10 bg-gray-50 w-full">
+  <nav class="fixed top-0 z-10 bg-gray-50 w-full italic font-Noto-Sans-Thai">
     <div class="bg-[#232F2F]  ">
       <div class=" lg:container mx-auto flex justify-between items-center md:px-10 px-3 py-3 duration-700 ease-in">
         <img :src="img1" alt="logo-home" class="md:w-20 w-14 rounded-full" />
@@ -9,7 +9,7 @@
           </span>
           <ul :class="[openNav ? 'left-0' : 'left-[-100%]']" class=" md:flex md:items-center md:px-0 px-10 md:pb-0 pb-10 md:static absolute md:bg-inherit bg-[#232F2F] md:w-auto w-full top-20 duration-700 ease-in">
             <li class="md:ml-8 md:my-0 my-6 " v-for="link in Links">
-              <a :href="link.link" class="text-xl text-[#DBB461] no-underline  hover:border-solid hover:underline ">{{link.name}}</a>
+              <a :href="link.link" class="text-xl text-[#DBB461] hover:border-solid hover:border hover:border-[#E0B860] hover:rounded-xl hover:shadow hover:shadow-[#E0B860] hover:px-2 ">{{link.name}}</a>
           </li>
           </ul>
         </div>
