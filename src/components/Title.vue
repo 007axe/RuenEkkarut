@@ -1,5 +1,5 @@
 <template>
-  <div  class="bg-[#DBB461] text-[#DBB461] font-Noto-Sans-Thai">
+  <div id="review"  class="bg-[#DBB461] text-[#DBB461] font-Noto-Sans-Thai">
     <div class="container mx-auto pt-4">
         <h2 class="font-bold text-center text-[#232F2F]">รีวิวจากลูกค้า</h2>
     <Carousel :autoplay="2000" :wrap-around="true" :transition="500">
@@ -36,7 +36,9 @@ export default {
         items:[
             {image:"https://media.discordapp.net/attachments/511170800997629954/1140568864384622602/image.png?width=417&height=468"},
             {image:"https://media.discordapp.net/attachments/511170800997629954/1140568929970962492/image.png?width=417&height=468"},
-            {image:"https://media.discordapp.net/attachments/511170800997629954/1140633720844472350/image.png?width=417&height=468"}
+            {image:"https://media.discordapp.net/attachments/511170800997629954/1140633720844472350/image.png?width=417&height=468"},
+            {image: "https://media.discordapp.net/attachments/511170800997629954/1140678227283681370/image.png?width=417&height=468"},
+            {image:"https://media.discordapp.net/attachments/511170800997629954/1140680008805920819/image.png?width=417&height=468"}
         ]
     }
   },
