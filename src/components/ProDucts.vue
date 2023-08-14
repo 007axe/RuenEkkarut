@@ -7,18 +7,18 @@
         <div v-for="item in products" :key="item.name" class="">
         <div class="max-w-sm cursor-pointer  rounded overflow-hidden hover:shadow-[#DBB461] shadow-md bg-[#DBB461] hover:bg-[#DBB444]">
           <img
-            class="w-full"
+            class="w-full lg:h-[250px] h-[200px] object-cover"
             :src="item.image"
-            alt="Sunset in the mountains"
+            alt="products image"
           />
           <div class="px-6 py-4">
-            <div class="font-bold text-md mb-2 ">{{ item.name }}</div>
+            <div class="font-bold text-sm mb-2 ">{{ item.name }}</div>
             <div class="flex  justify-between items-center lg:text-[14px] text-[12px]">
                 <span>{{ item.price }}</span>
                 <button @click="showData()" class="p-1   hover:bg-[#232F2F] hover:text-[#DBB461] border border-[#232F2F] rounded shadow">{{ buttonShowHide() }}รายละเอียด</button>
             </div>
             <div v-show="showDiv">
-                <p class="text-gray-700 lg:text-[14px] text-[12px] pt-2 text-start">
+                <p class="text-gray-700 lg:text-[14px] text-[12px] pt-2 text-start ">
               {{ item.details }}
             </p>
             </div>
@@ -40,7 +40,7 @@ export default {
           name: "ชุดผ้าห่มฝ้ายทอมือ แพคกระเป๋าถือซาติน",
           category:"",
           image:
-            "https://lh5.googleusercontent.com/IBLJE28vvaQna26iFlP5e-TEL4Ikv47X2CocttIa56mJNmX_BZnuGv1d_B5FX8GAiyKRMTP3aKwQ09yi8uFKHNcqyF5_XGz0i_YRGjCJwQK6Akw0hPzX2_GX4OK8djqh5A=w1280",
+            "https://scontent.fbkk5-6.fna.fbcdn.net/v/t39.30808-6/356697317_286262403940032_1242141603487593017_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=WoX3bWjTgcMAX-ysFQn&_nc_ht=scontent.fbkk5-6.fna&oh=00_AfBvTkyFTTZxk7jfE8qX7uoGRF89-dvDF5p8PTnBDAaPQA&oe=64DE42B7",
           price: "ชุดละ 250 บาท",
           details:
             "ผ้าห่มขนาด 100 x 200 cm ตัวกระเป๋ามีสีให้เลือกมากกว่า 20 โทนสี ตัวกระเป๋าใช้งานได้จริงเหมือนซื้อ 1 ได้ 2 ตกแต่งพร้อมแจกป้ายชื่อฟรี พร้อมออกแบบ รับประกันความสวย ถูกใจผู้รับอย่างแน่นอน",
@@ -49,46 +49,64 @@ export default {
           name: "ผ้าแพรเกรด A แพคกล่องเมทัลลิค",
           category:"",
           image:
-            "https://lh5.googleusercontent.com/DHXucTYzhX4zUucxoW7LciJJubupZufjXioD8pRxkTs_UDmUnBXZEFTbqCTqNs7m587iio4X5cn80baGdcJtbg3MMI-HZVlzM1iwHgcz3Jv7tBxhY-xKn_HfzOrnZQfMbw=w1280",
+            "https://scontent.fbkk5-6.fna.fbcdn.net/v/t39.30808-6/356672169_288645957035010_5810116991155713572_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=dSpo_m7_YHYAX_VZrhd&_nc_ht=scontent.fbkk5-6.fna&oh=00_AfAE5CFXgyycObjfLosc51IHxNix-7Tk3KZgL7jINYQ9tg&oe=64DE4A3F",
           price: "ชุดละ 140 บาท",
           details:
             "ตกแต่งพร้อมแจก มีสีกล่องสีผ้าให้เลือกอีกมากมาย ผ้าขนาด 5 ฟุต เนื้อดี",
         },
         {
-          name: "ชุดผ้าห่มฝ้ายทอมือ",
+          name: "ชุดผ้าห่มฝ้ายทอมือ แพคกระเป๋าถือซาติน",
           category:"",
           image:
-            "https://lh5.googleusercontent.com/IBLJE28vvaQna26iFlP5e-TEL4Ikv47X2CocttIa56mJNmX_BZnuGv1d_B5FX8GAiyKRMTP3aKwQ09yi8uFKHNcqyF5_XGz0i_YRGjCJwQK6Akw0hPzX2_GX4OK8djqh5A=w1280",
+            "https://scontent.fbkk5-6.fna.fbcdn.net/v/t39.30808-6/356697317_286262403940032_1242141603487593017_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=WoX3bWjTgcMAX-ysFQn&_nc_ht=scontent.fbkk5-6.fna&oh=00_AfBvTkyFTTZxk7jfE8qX7uoGRF89-dvDF5p8PTnBDAaPQA&oe=64DE42B7",
           price: "ชุดละ 250 บาท",
           details:
             "ผ้าห่มขนาด 100 x 200 cm ตัวกระเป๋ามีสีให้เลือกมากกว่า 20 โทนสี ตัวกระเป๋าใช้งานได้จริงเหมือนซื้อ 1 ได้ 2 ตกแต่งพร้อมแจกป้ายชื่อฟรี พร้อมออกแบบ รับประกันความสวย ถูกใจผู้รับอย่างแน่นอน",
         },
         {
-          name: "ชุดผ้าห่มฝ้ายทอมือ",
+          name: "ผ้าแพรเกรด A แพคกล่องเมทัลลิค",
           category:"",
           image:
-            "https://lh5.googleusercontent.com/IBLJE28vvaQna26iFlP5e-TEL4Ikv47X2CocttIa56mJNmX_BZnuGv1d_B5FX8GAiyKRMTP3aKwQ09yi8uFKHNcqyF5_XGz0i_YRGjCJwQK6Akw0hPzX2_GX4OK8djqh5A=w1280",
+            "https://scontent.fbkk5-6.fna.fbcdn.net/v/t39.30808-6/356672169_288645957035010_5810116991155713572_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=dSpo_m7_YHYAX_VZrhd&_nc_ht=scontent.fbkk5-6.fna&oh=00_AfAE5CFXgyycObjfLosc51IHxNix-7Tk3KZgL7jINYQ9tg&oe=64DE4A3F",
+          price: "ชุดละ 140 บาท",
+          details:
+            "ตกแต่งพร้อมแจก มีสีกล่องสีผ้าให้เลือกอีกมากมาย ผ้าขนาด 5 ฟุต เนื้อดี",
+        },
+        {
+          name: "ชุดผ้าห่มฝ้ายทอมือ แพคกระเป๋าถือซาติน",
+          category:"",
+          image:
+            "https://scontent.fbkk5-6.fna.fbcdn.net/v/t39.30808-6/356697317_286262403940032_1242141603487593017_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=WoX3bWjTgcMAX-ysFQn&_nc_ht=scontent.fbkk5-6.fna&oh=00_AfBvTkyFTTZxk7jfE8qX7uoGRF89-dvDF5p8PTnBDAaPQA&oe=64DE42B7",
           price: "ชุดละ 250 บาท",
           details:
             "ผ้าห่มขนาด 100 x 200 cm ตัวกระเป๋ามีสีให้เลือกมากกว่า 20 โทนสี ตัวกระเป๋าใช้งานได้จริงเหมือนซื้อ 1 ได้ 2 ตกแต่งพร้อมแจกป้ายชื่อฟรี พร้อมออกแบบ รับประกันความสวย ถูกใจผู้รับอย่างแน่นอน",
         },
         {
-          name: "ชุดผ้าห่มฝ้ายทอมือ",
+          name: "ผ้าแพรเกรด A แพคกล่องเมทัลลิค",
           category:"",
           image:
-            "https://lh5.googleusercontent.com/IBLJE28vvaQna26iFlP5e-TEL4Ikv47X2CocttIa56mJNmX_BZnuGv1d_B5FX8GAiyKRMTP3aKwQ09yi8uFKHNcqyF5_XGz0i_YRGjCJwQK6Akw0hPzX2_GX4OK8djqh5A=w1280",
+            "https://scontent.fbkk5-6.fna.fbcdn.net/v/t39.30808-6/356672169_288645957035010_5810116991155713572_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=dSpo_m7_YHYAX_VZrhd&_nc_ht=scontent.fbkk5-6.fna&oh=00_AfAE5CFXgyycObjfLosc51IHxNix-7Tk3KZgL7jINYQ9tg&oe=64DE4A3F",
+          price: "ชุดละ 140 บาท",
+          details:
+            "ตกแต่งพร้อมแจก มีสีกล่องสีผ้าให้เลือกอีกมากมาย ผ้าขนาด 5 ฟุต เนื้อดี",
+        },
+        {
+          name: "ชุดผ้าห่มฝ้ายทอมือ แพคกระเป๋าถือซาติน",
+          category:"",
+          image:
+            "https://scontent.fbkk5-6.fna.fbcdn.net/v/t39.30808-6/356697317_286262403940032_1242141603487593017_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=WoX3bWjTgcMAX-ysFQn&_nc_ht=scontent.fbkk5-6.fna&oh=00_AfBvTkyFTTZxk7jfE8qX7uoGRF89-dvDF5p8PTnBDAaPQA&oe=64DE42B7",
           price: "ชุดละ 250 บาท",
           details:
             "ผ้าห่มขนาด 100 x 200 cm ตัวกระเป๋ามีสีให้เลือกมากกว่า 20 โทนสี ตัวกระเป๋าใช้งานได้จริงเหมือนซื้อ 1 ได้ 2 ตกแต่งพร้อมแจกป้ายชื่อฟรี พร้อมออกแบบ รับประกันความสวย ถูกใจผู้รับอย่างแน่นอน",
         },
         {
-          name: "ชุดผ้าห่มฝ้ายทอมือ",
+          name: "ผ้าแพรเกรด A แพคกล่องเมทัลลิค",
           category:"",
           image:
-            "https://lh5.googleusercontent.com/IBLJE28vvaQna26iFlP5e-TEL4Ikv47X2CocttIa56mJNmX_BZnuGv1d_B5FX8GAiyKRMTP3aKwQ09yi8uFKHNcqyF5_XGz0i_YRGjCJwQK6Akw0hPzX2_GX4OK8djqh5A=w1280",
-          price: "ชุดละ 250 บาท",
+            "https://scontent.fbkk5-6.fna.fbcdn.net/v/t39.30808-6/356672169_288645957035010_5810116991155713572_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=dSpo_m7_YHYAX_VZrhd&_nc_ht=scontent.fbkk5-6.fna&oh=00_AfAE5CFXgyycObjfLosc51IHxNix-7Tk3KZgL7jINYQ9tg&oe=64DE4A3F",
+          price: "ชุดละ 140 บาท",
           details:
-            "ผ้าห่มขนาด 100 x 200 cm ตัวกระเป๋ามีสีให้เลือกมากกว่า 20 โทนสี ตัวกระเป๋าใช้งานได้จริงเหมือนซื้อ 1 ได้ 2 ตกแต่งพร้อมแจกป้ายชื่อฟรี พร้อมออกแบบ รับประกันความสวย ถูกใจผู้รับอย่างแน่นอน",
+            "ตกแต่งพร้อมแจก มีสีกล่องสีผ้าให้เลือกอีกมากมาย ผ้าขนาด 5 ฟุต เนื้อดี",
         },
       ],
       showDiv: false
