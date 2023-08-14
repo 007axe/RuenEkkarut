@@ -28,7 +28,7 @@
         Links: [
           { name: "หน้าแรก", link: "#" },
           { name: "สินค้า", link: "#" },
-          { name: "ติดต่อ", link: "#" },
+          { name: "ติดต่อ", link: "#contact" },
           { name: "เกี่ยวกับ", link: "#" }
         ],
         openNav: false,

@@ -2,6 +2,8 @@
   
   <NavBar />
   <HeadLogo />
+  <Title/>
+  <Product/>
   <Contact />
   
   <footer class="bg-gray-700 py-5">
@@ -13,6 +15,8 @@
 import Contact from "./components/Contact.vue";
 import HeadLogo from "./components/HeadLogo.vue";
 import NavBar from "./components/NavBar.vue";
+import Title from "./components/Title.vue";
+import Product from "./components/product.vue";
 
 
 
@@ -26,6 +30,8 @@ export default {
     HeadLogo,
     NavBar,
     Contact,
+    Title,
+    Product
 
   }
 }
