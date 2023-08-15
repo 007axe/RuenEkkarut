@@ -4,7 +4,7 @@
       <div class="container mx-auto">
 
       <div class=" lg:container mx-auto flex justify-between items-center md:px-0 px-3 py-3 duration-700 ease-in">
-        <a href="#"><img :src="img1" alt="logo-home" class="md:w-20 w-14 rounded-full cursor-pointer" /></a>
+        <a href="#"><img :src="img1" alt="logo-home" class="md:w-18 w-14 rounded-full cursor-pointer" /></a>
         <div>
           <span @click="MenuOpen()" class=" absolute md:hidden right-4 top-4 cursor-pointer text-4xl text-[#DBB461]">
               <i :class="[openNav ? 'fa-solid fa-xmark' : 'fa-solid fa-bars']"></i>
