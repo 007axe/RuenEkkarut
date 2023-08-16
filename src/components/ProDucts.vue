@@ -1,11 +1,11 @@
 <template>
   <div id="products"  >
-    <div  class="container mx-auto font-Noto-Sans-Thai text-[#232F2F] pb-12 duration-700 ease-in">
+    <div  class="container mx-auto font-Noto-Sans-Thai text-[#DBB461] pb-12 duration-700 ease-in">
       <h2  class=" font-bold text-center text-[#DBB461] mt-4 mb-4" data-aos="fade-right" data-aos-duration="2000">สินค้า</h2>
       <!-- สินค้า -->
       <div class="grid xl:grid-cols-4 md:grid-cols-3 gap-3  justify-center ">
         <div v-for="(item, index) in products" :key="item.name" class="">
-        <div data-aos="fade-right" data-aos-duration="2000" class="max-w-sm cursor-pointer  rounded overflow-hidden hover:shadow-[#DBB461] shadow-md bg-[#DBB461] hover:bg-[#DBB444]">
+        <div data-aos="fade-right" data-aos-duration="2000" class="max-w-sm cursor-pointer  rounded  overflow-hidden hover:shadow-[#DBB461] shadow-md bg-[rgba(0,0,0,0.4)]  border border-[#DBB461]">
           <img
             class="w-full lg:h-[250px] h-[200px] object-cover"
             :src="item.image"
@@ -15,10 +15,10 @@
             <div class="font-bold text-sm mb-2 ">{{ item.name }}</div>
             <div class="flex  justify-between items-center lg:text-[14px] text-[12px]">
                 <span>{{ item.price }}</span>
-                <button @click="showData(index)" class="p-1   hover:bg-[#232F2F] hover:text-[#DBB461] border border-[#232F2F] rounded shadow">{{ item.showDiv ? 'ซ่อน' : 'แสดง' }}รายละเอียด</button>
+                <button @click="showData(index)" class="p-1   hover:bg-[#232F2F] hover:text-[#DBB461]   rounded shadow border-2 border-[#DBB461]">{{ item.showDiv ? 'ซ่อน' : 'แสดง' }}รายละเอียด</button>
             </div>
             <div v-show="item.showDiv">
-                <p class="text-gray-700 lg:text-[14px] text-[12px] pt-2 text-start md:w-full w-[234px]">
+                <p class="text-[#DBB461] lg:text-[14px] text-[12px] pt-2 text-start md:w-full w-[234px]">
               <ul class="list-disc list-inside">
                 <li v-for="(item, key) in item.details" :key="key">{{ item }}</li>
               </ul>
