@@ -51,20 +51,9 @@ export default {
  
   height: 100%;
 }
-.animate-text {
-  animation: fade-up 1s;
-  
-}
-
-@keyframes fade-up {
-  0% {
-    opacity: 0;
-    transform: translateY(30px) scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px) scale(1);
-  }
+.bg-custom{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
 }
 
 </style>
