@@ -18,6 +18,8 @@ import NavBar from "./components/NavBar.vue";
 import TitleVue from "./components/Title.vue";
 import ProDucts from "./components/ProDucts.vue";
 
+import { onMounted } from "vue";
+import AOS from "aos";
 
 
 export default {
@@ -25,6 +27,11 @@ export default {
     return {
       
     }
+  },
+  setup() {
+    onMounted(() => {
+    AOS.init();
+    })
   },
   components: {
     HeadLogo,

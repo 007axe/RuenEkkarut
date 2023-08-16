@@ -1,16 +1,16 @@
 <template>
-  <div id="review"  class="bg-[#DBB461] text-[#DBB461] font-Noto-Sans-Thai">
-    <div class="container mx-auto pt-4">
-        <h2 class="font-bold text-center text-[#232F2F]">รีวิวจากลูกค้า</h2>
+  <div id="review"   class="bg-[#DBB461] text-[#DBB461] font-Noto-Sans-Thai">
+    <div class="container mx-auto pt-4 " data-aos="fade-left" data-aos-duration="2000" >
+        <h2  class="font-bold text-center text-[#232F2F] mb-4">รีวิวจากลูกค้า</h2>
     <Carousel :autoplay="2000" :wrap-around="true" :transition="500">
     <Slide v-for="item in items" :key="item.image">
         <div class="carousel__item p-6 ">
-        <div  class="max-w-4xl  rounded overflow-hidden  shadow-lg bg-[#232F2F] my-14">
+        <div  class="max-w-4xl  rounded overflow-hidden  shadow-lg bg-[#232F2F] mb-14">
           <img 
             
             class="w-full bg-contain rounded overflow-hidden"
             :src="item.image"
-            alt="Sunset in the mountains"
+            alt="review"
           />
         </div>
       </div>

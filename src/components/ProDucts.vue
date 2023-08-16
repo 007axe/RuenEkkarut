@@ -1,11 +1,11 @@
 <template>
-  <div id="porduct">
-    <div class="container mx-auto font-Noto-Sans-Thai text-[#232F2F] pb-12 duration-700 ease-in">
-      <h2 class="font-bold text-center mb-12 text-[#DBB461] pt-4">สินค้า</h2>
+  <div id="porduct "  >
+    <div  class="container mx-auto font-Noto-Sans-Thai text-[#232F2F] pb-12 duration-700 ease-in">
+      <h2  class=" font-bold text-center text-[#DBB461] mt-4 mb-4" data-aos="fade-right" data-aos-duration="2000">สินค้า</h2>
       <!-- สินค้า -->
       <div class="grid xl:grid-cols-4 md:grid-cols-3 gap-3  justify-center ">
         <div v-for="(item, index) in products" :key="item.name" class="">
-        <div class="max-w-sm cursor-pointer  rounded overflow-hidden hover:shadow-[#DBB461] shadow-md bg-[#DBB461] hover:bg-[#DBB444]">
+        <div data-aos="fade-right" data-aos-duration="2000" class="max-w-sm cursor-pointer  rounded overflow-hidden hover:shadow-[#DBB461] shadow-md bg-[#DBB461] hover:bg-[#DBB444]">
           <img
             class="w-full lg:h-[250px] h-[200px] object-cover"
             :src="item.image"
@@ -18,7 +18,7 @@
                 <button @click="showData(index)" class="p-1   hover:bg-[#232F2F] hover:text-[#DBB461] border border-[#232F2F] rounded shadow">{{ buttonShowHide() }}รายละเอียด</button>
             </div>
             <div v-show="item.showDiv">
-                <p class="text-gray-700 lg:text-[14px] text-[12px] pt-2 text-start ">
+                <p class="text-gray-700 lg:text-[14px] text-[12px] pt-2 text-start md:w-full w-[234px]">
               {{ item.details }}
             </p>
             </div>
@@ -28,13 +28,18 @@
       </div>
     </div>
   </div>
+
 </template>
 
 <script>
+
+
+
 export default {
   name: "ProDucts",
   data() {
     return {
+      
       products: [
         {
           name: "ชุดผ้าห่มฝ้ายทอมือ แพคกระเป๋าถือซาติน",
@@ -117,17 +122,20 @@ export default {
             "ตกแต่งพร้อมแจก มีสีกล่องสีผ้าให้เลือกอีกมากมาย ผ้าขนาด 5 ฟุต เนื้อดี",
         },
       ],
+
       
     };
   },
+  
   methods:{
     showData(index){
         this.products[index].showDiv =  !this.products[index].showDiv
     },
     buttonShowHide(){
-            return this.showDiv ? "ซ่อน" : "แสดง"
+            return this.products.showDiv ? "ซ่อน" : "แสดง"
         }
-  }
+  },
+  
 };
 </script>
 

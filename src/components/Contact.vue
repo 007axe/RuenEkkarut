@@ -1,9 +1,9 @@
 <template>
-  <div id="contact" class="bg-[#DBB461] font-Noto-Sans-Thai py-5">
-    <div class=" mx-auto flex flex-col justify-center">
-      <h2 class="font-bold text-center mb-12 text-[#232F2F]">ติดต่อ</h2>
+  <div id="contact" class="bg-[#DBB461] font-Noto-Sans-Thai py-5" >
+    <div class=" mx-auto flex flex-col justify-center" data-aos="fade-up" data-aos-duration="2000">
+      <h2 class="font-bold text-center mb-4 text-[#232F2F]" >ติดต่อ</h2>
 
-      <div class="container xl:flex mb-8 mx-auto xl:justify-between duration-700 ease-in">
+      <div class="container xl:flex mb-8 mx-auto xl:justify-between duration-700 ease-in" >
         <!-- ข้อมูลการติดต่อ -->
         <div class="xl:text-start text-center duration-700 ease-in">
           <div class="text-[#232F2F]">
@@ -56,7 +56,7 @@
           
         </div>
 
-        <div class="xl:w-[40%] xl:text-start text-center" >
+        <div class="xl:w-[40%] xl:text-start text-center">
           <form
             action="mailto:info@ruenekkarut@gmail.com"
             method="post"
@@ -70,7 +70,7 @@
             
             <label class="text-lg">รายละเอียด</label><br />
             <textarea name="yourMessage" cols="40" rows="10" class="mb-4 rounded-md w-[100%]"></textarea><br />
-            <button type="submit" name="" class="bg-[#232F2F] hover:bg-[#000000] text-[#DBB461]  hover:shadow-lg py-2 px-8 rounded-md" >ส่ง</button>
+            <button type="submit" class="bg-[#232F2F] hover:bg-[#000000] text-[#DBB461]  hover:shadow-lg py-2 px-8 rounded-md" >ส่ง</button>
           </form>
         </div>
         
