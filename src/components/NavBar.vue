@@ -1,6 +1,6 @@
 <template>
 
-    <nav class="fixed top-0 z-10 bg-[#232F2F] w-full italic font-Noto-Sans-Thai ">
+    <nav class="fixed top-0 z-10 bg-[#232F2F] w-full italic font-Noto-Sans-Thai shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
       <div class="container mx-auto">
 
       <div class=" lg:container mx-auto flex justify-between items-center md:px-0 px-3 py-3 duration-700 ease-in">
@@ -31,7 +31,7 @@
         Links: [
           { name: "หน้าแรก", link: "#" },
           { name: "รีวิว", link: "#review" },
-          { name: "สินค้า", link: "#porduct" },
+          { name: "สินค้า", link: "#products" },
           { name: "ติดต่อ", link: "#contact" },
           { name: "เกี่ยวกับ", link: "#" }
         ],
